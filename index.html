@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="./css/bookshelf.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bookshelfs</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="container bg-white shadow" id="add-todo">
+                <h2 class="container-header text-center">Enter <i>your</i> New Book :)</h2>
+                <form class="form" action="#" id="form">
+                    <div class="form-group form-title">
+                        <input type="text" id="titleBook" name="titleBook" placeholder="Title Book ..." required>
+                    </div>
+                    <div class="form-group form-title">
+                        <input type="text" id="author" name="author" placeholder="Author ..." required>
+                    </div>
+                    <div class="form-group form-title">
+                        <input type="number" id="year" name="year" placeholder="Year (4 digits) ..." required>
+                    </div>
+                    <input type="submit" value="Enter" name="Submit" class="btn-submit">
+                </form>
+                
+                <h2 class="search container-header">Searching <i>your</i> Book</h2>
+                <form class="searchBook" id="formItem">
+                    <input id="keyword" type="text" placeholder="Title/Author of Book">
+                    <button id="searchSubmit" class="btn-search" type="submit">Search</button>
+                </form>
+
+                <div class="container">
+                    <div class="list-item" id="listBook">
+                    <!-- list searching title book -->
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h2 class="container-header">Not Finished Reading</h2>
+                    <div class="list-item" id="bookshelfs">
+                    
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h2 class="container-header">Finished Reading</h2>
+                    <div class="list-item" id="completed-bookshelfs">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/bookshelf.js"></script>
+</html>
